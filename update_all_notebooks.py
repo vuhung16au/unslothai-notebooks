@@ -44,7 +44,7 @@ You will learn how to do [data prep](#Data), how to [train](#Train), how to [run
 announcement_separation = '<div class="align-center">'
 
 general_announcement_content_hf_course = general_announcement_content.split(announcement_separation)
-general_announcement_content_hf_course = general_announcement_content_hf_course[0] + announcement_separation + '<a href="https://huggingface.co/learn/nlp-course/en/chapter12/6?fw=pt"><img src="https://github.com/unslothai/notebooks/raw/main/assets/hf%20course.png" width="165"></a>' + general_announcement_content_hf_course[1]
+general_announcement_content_hf_course = general_announcement_content_hf_course[0] + announcement_separation + '<a href="https://huggingface.co/learn/nlp-course/en/chapter12/6?fw=pt"><img src="https://github.com/vuhung16au/unslothai-notebooks/raw/main/assets/hf%20course.png" width="165"></a>' + general_announcement_content_hf_course[1]
 general_announcement_content_hf_course = general_announcement_content_hf_course.split("To install Unsloth")
 hf_additional_string_announcement = "In this [Hugging Face](https://huggingface.co/learn/nlp-course/en/chapter12/6?fw=pt) and Unsloth notebook, you will learn to transform {full_model_name} into a Reasoning model using GRPO."
 general_announcement_content_hf_course = (
@@ -55,7 +55,7 @@ general_announcement_content_hf_course = (
 )
 
 general_announcement_content_meta = general_announcement_content.split(announcement_separation)
-general_announcement_content_meta = general_announcement_content_meta[0] + "\n\n" + '<a href="https://github.com/meta-llama/synthetic-data-kit"><img src="https://raw.githubusercontent.com/unslothai/notebooks/refs/heads/main/assets/meta%20round%20logo.png" width="137"></a>' + general_announcement_content_meta[1]
+general_announcement_content_meta = general_announcement_content_meta[0] + "\n\n" + '<a href="https://github.com/meta-llama/synthetic-data-kit"><img src="https://raw.githubusercontent.com/vuhung16au/unslothai-notebooks/refs/heads/main/assets/meta%20round%20logo.png" width="137"></a>' + general_announcement_content_meta[1]
 
 # =======================================================
 # INSTALLATION (MANY OF THIS IS SPECIFIC TO ONE OF THE NOTEBOOKS)
@@ -246,9 +246,9 @@ text_for_last_cell_gguf = """Now, use the `model-unsloth.gguf` file or `model-un
 And we're done! If you have any questions on Unsloth, we have a [Discord](https://discord.gg/unsloth) channel! If you find any bugs or want to keep updated with the latest LLM stuff, or need help, join projects etc, feel free to join our Discord!
 
 Some other links:
-1. Train your own reasoning model - Llama GRPO notebook [Free Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.1_(8B)-GRPO.ipynb)
-2. Saving finetunes to Ollama. [Free notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb)
-3. Llama 3.2 Vision finetuning - Radiography use case. [Free Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.2_(11B)-Vision.ipynb)
+1. Train your own reasoning model - Llama GRPO notebook [Free Colab](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3.1_(8B)-GRPO.ipynb)
+2. Saving finetunes to Ollama. [Free notebook](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb)
+3. Llama 3.2 Vision finetuning - Radiography use case. [Free Colab](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3.2_(11B)-Vision.ipynb)
 6. See notebooks for DPO, ORPO, Continued pretraining, conversational finetuning and more on our [documentation](https://docs.unsloth.ai/get-started/unsloth-notebooks)!
 
 <div class="align-center">
@@ -266,9 +266,9 @@ text_for_last_cell_gemma3 = text_for_last_cell_gguf.replace("model-unsloth", "ge
 text_for_last_cell_non_gguf = """And we're done! If you have any questions on Unsloth, we have a [Discord](https://discord.gg/unsloth) channel! If you find any bugs or want to keep updated with the latest LLM stuff, or need help, join projects etc, feel free to join our Discord!
 
 Some other links:
-1. Train your own reasoning model - Llama GRPO notebook [Free Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.1_(8B)-GRPO.ipynb)
-2. Saving finetunes to Ollama. [Free notebook](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb)
-3. Llama 3.2 Vision finetuning - Radiography use case. [Free Colab](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Llama3.2_(11B)-Vision.ipynb)
+1. Train your own reasoning model - Llama GRPO notebook [Free Colab](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3.1_(8B)-GRPO.ipynb)
+2. Saving finetunes to Ollama. [Free notebook](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3_(8B)-Ollama.ipynb)
+3. Llama 3.2 Vision finetuning - Radiography use case. [Free Colab](https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/nb/Llama3.2_(11B)-Vision.ipynb)
 6. See notebooks for DPO, ORPO, Continued pretraining, conversational finetuning and more on our [documentation](https://docs.unsloth.ai/get-started/unsloth-notebooks)!
 
 <div class="align-center">
@@ -850,7 +850,7 @@ def add_colab_badge(notebooks_dir):
             with open(path, "r", encoding="utf-8") as f:
                 notebook_content = json.load(f)
 
-            badge = badge_section.format(link_colab=(f"https://colab.research.google.com/github/unslothai/notebooks/blob/main/"+path).replace(" ", "%20"))
+            badge = badge_section.format(link_colab=(f"https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/"+path).replace(" ", "%20"))
             notebook_content["cells"].insert(
                 0,
                 {
@@ -877,11 +877,11 @@ def update_readme(
     kaggle_accelerator="nvidiaTeslaT4",
 ):
     if args.to_main_repo:
-        base_url_colab = "https://colab.research.google.com/github/unslothai/notebooks/blob/main/"
-        base_url_kaggle = "https://www.kaggle.com/notebooks/welcome?src=https://github.com/unslothai/notebooks/blob/main/"
+        base_url_colab = "https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/main/"
+        base_url_kaggle = "https://www.kaggle.com/notebooks/welcome?src=https://github.com/vuhung16au/unslothai-notebooks/blob/main/"
     else:
-        base_url_colab = f"https://colab.research.google.com/github/unslothai/notebooks/blob/{current_branch}/"
-        base_url_kaggle = f"https://www.kaggle.com/notebooks/welcome?src=https://github.com/unslothai/notebooks/blob/{current_branch}/"
+        base_url_colab = f"https://colab.research.google.com/github/vuhung16au/unslothai-notebooks/blob/{current_branch}/"
+        base_url_kaggle = f"https://www.kaggle.com/notebooks/welcome?src=https://github.com/vuhung16au/unslothai-notebooks/blob/{current_branch}/"
 
     paths = glob(os.path.join(notebooks_dir, "*.ipynb"))
     paths = [x.replace("\\", "/") for x in paths]
@@ -1011,9 +1011,9 @@ def update_readme(
         content_after = readme_content[end_index:] 
 
         temp = (
-            "(https://github.com/unslothai/notebooks/#-kaggle-notebooks).\n\n"
+            "(https://github.com/vuhung16au/unslothai-notebooks/#-kaggle-notebooks).\n\n"
             if args.to_main_repo
-            else "(https://github.com/unslothai/notebooks/#-kaggle-notebooks).\n\n"
+            else "(https://github.com/vuhung16au/unslothai-notebooks/#-kaggle-notebooks).\n\n"
         )
 
         colab_updated_notebooks_links = "\n"
